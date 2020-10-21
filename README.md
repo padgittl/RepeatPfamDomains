@@ -1,6 +1,6 @@
 # Identification of repeat-associated Pfam domains
 
-# Updated 10/21/2020
+Updated 10/21/2020
 
 
 ### Details about repeat-associated domain identification 
