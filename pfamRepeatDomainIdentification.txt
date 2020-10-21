@@ -1,4 +1,4 @@
-# Updated 10/21/2020 - 120 Pfam Accession IDs
+### Updated 10/21/2020 - 120 Pfam Accession IDs ###
 '''
 Pfam release       : 33.1
 Pfam-A families    : 18259
@@ -22,7 +22,7 @@ Based on UniProtKB : 2019_08
 'ntegrase core domain'
 'aspartyl'
 
-### Papers, pfam pages, and information used to categorize repeat domains
+### Papers, pfam pages, and information used to categorize repeat domains ###
 PF05585 // DUF1758 # associated with retroviral proteins --> http://pfam.xfam.org/family/gag-asp_proteas
 PF13696 # appears along with other well-established repeat domains including PF08284, PF14223, PF03732, PF13975
 PF00098 # appears along with other well-established repeat domains including PF13975, PF08284, PF03732
