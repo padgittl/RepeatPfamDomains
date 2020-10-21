@@ -7,8 +7,9 @@ Updated 10/21/2020
 pfamRepeatDomainIdentification.txt
 
 
-### collectPfamRepeatDomains.py ###
+### Collect repeat-associated pfam domains from Pfam-A.hmm file
 python collectPfamRepeatDomains.py Pfam-A.hmm > pfamRepeatDomains.v2.txt
 
-# pfamRepeatDomains.v2.txt tab-delimited format: pfamAccessionID	pfamAccessionDescription	
+pfamRepeatDomains.v2.txt tab-delimited format: 
+pfamAccessionID	pfamAccessionDescription	
 
