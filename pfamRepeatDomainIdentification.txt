@@ -1,0 +1,47 @@
+# Updated 10/21/2020 - 119 Pfam Accession IDs
+'''
+Pfam release       : 33.1
+Pfam-A families    : 18259
+Date               : 2020-04
+Based on UniProtKB : 2019_08
+'''
+
+### Repeat-associated keywords used to collect domains: ###
+'gag-'
+'gag '
+'GAG-'
+'GAG '
+'ransposase'
+'LTR'
+'Ty1'
+'Ty3'
+'etrotrans'
+'etroviral aspartyl protease'
+'everse transcriptase'
+'lant transposon protein'
+'ntegrase core domain'
+'aspartyl'
+
+### Papers, pfam pages, and information used to categorize repeat domains
+PF05585 // DUF1758 # associated with retroviral proteins --> http://pfam.xfam.org/family/gag-asp_proteas
+PF13696 # appears along with other well-established repeat domains including PF08284, PF14223, PF03732, PF13975
+PF00098 # appears along with other well-established repeat domains including PF13975, PF08284, PF03732
+PF13960 // DUF4218 # appears along with other well-established repeat domains including PF14223, PF13963, PF03004, PF02992
+PF14392 # appears along with other well-established repeat domains including PF03732, PF13975
+PF13917 # http://pfam.xfam.org/family/PF13917/alignment/rp35 //// http://pfam.xfam.org/family/PF13917
+PF13837 # https://pfam.xfam.org/family/Myb_DNA-bind_4
+PF12776 # https://pfam.xfam.org/family/Myb_DNA-bind_3
+PF00078 # http://pfam.xfam.org/family/pf00078
+PF12784 # https://www.ncbi.nlm.nih.gov/Structure/cdd/PF12784
+PF13359 # "DDE Transposases: Structural Similarity and Diversity" https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2991504/
+PF12784 # https://www.ncbi.nlm.nih.gov/Structure/cdd/PF12784
+PF14111 // DUF4283 # "LINEs between Species: Evolutionary Dynamics of LINE-1 Retrotransposons across the Eukaryotic Tree of Life" https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5203782/
+PF06485 // DUF1092 # identified as having "involvement in the transposition/integration activity" --> "The RNase H-like superfamily: new members, comparative structural analysis and evolutionary classification" https://academic.oup.com/nar/article/42/7/4160/2435711
+
+### Excluded family IDs: ###
+PF11474
+PF06550
+PF00026 # https://pfam.xfam.org/family/PF00026 "This family does not include the retroviral nor retrotransposon proteases"
+PF17984
+PF16828
+PF16770
