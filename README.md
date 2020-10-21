@@ -1,4 +1,6 @@
-# RepeatPfamDomains Identification Pipeline - updated 10/21/2020
+# RepeatPfamDomains Identification Pipeline
+
+Updated 10/21/2020
 
 ### Details about repeat domain identification 
 pfamRepeatDomainIdentification.txt
