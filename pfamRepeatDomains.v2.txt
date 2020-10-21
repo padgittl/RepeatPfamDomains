@@ -70,6 +70,7 @@ PF06485.12	RNA-binding protein Tab2/Atab2
 PF03004.15	Plant transposase (Ptta/En/Spm family)	
 PF14291.7	Domain of unknown function (DUF4371)	
 PF00078.28	Reverse transcriptase (RNA-dependent DNA polymerase)	
+PF14392.7	Zinc knuckle	
 PF14372.7	Domain of unknown function (DUF4413)	
 PF04693.13	Archaeal putative transposase ISC1217	
 PF01526.18	Tn3 transposase DDE domain	

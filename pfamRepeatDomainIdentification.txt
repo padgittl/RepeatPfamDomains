@@ -1,4 +1,4 @@
-# Updated 10/21/2020 - 119 Pfam Accession IDs
+# Updated 10/21/2020 - 120 Pfam Accession IDs
 '''
 Pfam release       : 33.1
 Pfam-A families    : 18259
