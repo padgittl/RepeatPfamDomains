@@ -1,7 +1,7 @@
 # Identification of repeat-associated Pfam domains
 
 Updated 10/21/2020
-
+Using Pfam release: 33.1
 
 ### How repeat-associated domains were identified
 pfamRepeatDomainIdentification.txt
