@@ -3,7 +3,7 @@
 Updated 10/21/2020
 
 
-### Details about repeat-associated domain identification 
+### How repeat-associated domains were identified
 pfamRepeatDomainIdentification.txt
 
 
