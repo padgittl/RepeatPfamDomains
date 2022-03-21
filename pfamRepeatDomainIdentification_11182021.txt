@@ -1,0 +1,181 @@
+# Updated 10/21/2020 - 119 Pfam Accession IDs
+'''
+Pfam release       : 33.1
+Pfam-A families    : 18259
+Date               : 2020-04
+Based on UniProtKB : 2019_08
+'''
+
+### Repeat-associated keywords used to collect domains: ###
+'gag-'
+'gag '
+'GAG-'
+'GAG '
+'ransposase'
+'LTR'
+'Ty1'
+'Ty3'
+'etrotrans'
+'etroviral aspartyl protease'
+'everse transcriptase'
+'lant transposon protein'
+'ntegrase core domain'
+'aspartyl'
+
+### Papers, pfam pages, and information used to categorize repeat domains
+# 11/12/2021
+# I was looking at functions of genes in syntenic blocks and identified additional Pfam repeat domains that seemingly appeared associated with viruses.
+'''
+TOM* genes are involved in regulating host response to the Tobamovirus --> https://doi.org/10.1073/pnas.170295097
+Q9ZUM2  sp|Q9ZUM2|TOM3_ARATH Tobamovirus multiplication protein 3 OS=Arabidopsis thaliana OX=3702 GN=TOM3 PE=1 SV=2
+Q9C5W7  sp|Q9C5W7|TOM2A_ARATH Tobamovirus multiplication protein 2A OS=Arabidopsis thaliana OX=3702 GN=TOM2A PE=1 SV=1
+Q402F4  sp|Q402F4|TOM1_TOBAC Tobamovirus multiplication protein 1 OS=Nicotiana tabacum OX=4097 GN=TOM1 PE=1 SV=1
+Q8H960  sp|Q8H960|TOM2B_ARATH Tobamovirus multiplication protein 2B OS=Arabidopsis thaliana OX=3702 GN=TOM2B PE=2 SV=2
+PF01057.18      Parvovirus non-structural protein NS1
+PF04514.13	Bluetongue virus non-structural protein NS2
+PF04665.13      Poxvirus A32 protein
+PF05290.12      Baculovirus immediate-early protein (IE-0)
+PF04513.13      Baculovirus polyhedron envelope protein, PEP, C terminus
+PF02480.17      Alphaherpesvirus glycoprotein E
+PF02907.16      Hepatitis C virus NS3 protease
+PF02439.16      Adenovirus E3 region protein CR2
+PF12507.9       Human Cytomegalovirus UL139 protein
+PF07387.12      Seadornavirus VP7
+PF07652.15	Flavivirus DEAD domain
+
+# associated genes...
+HUMLU_CAS0051396.t1     involved in cell division
+HUMLU_CAS0077209.t1     involved in cell division
+HUMLU_CAS0045893.t1	disease resistance // TIR-NBS-LRR-like protein [Trema orientale]
+HUMLU_CAS0040035.t1	involved in cell division
+HUMLU_CAS0029974.t1	involved in cell division
+HUMLU_CAS0059769.t1	cell division
+HUMLU_CAS0040138.t1	cell division
+HUMLU_CAS0041600.t1	WEB family
+HUMLU_CAS0045893.t1	disease resistance // TIR-NBS-LRR-like protein [Trema orientale]
+HUMLU_CAS0045918.t1	TIR-NBS-LRR-like protein
+HUMLU_CAS0063361.t1	GOLGI SNAP receptor complex
+HUMLU_CAS0070538.t1	LRR receptor/kinase
+HUMLU_CAS0038518.t1	serine/threonine kinase
+HUMLU_CAS0019495.t2	splicing factor
+HUMLU_CAS0071248.t1	serine protease activity
+HUMLU_CAS0078795.t1	proline rich receptor 
+HUMLU_CAS0071178.t1	cingulin or structural protein?
+
+# only these two seem like they are legitimately associated with transposons
+# neither genes appears in a syntenic block or has a tandem gene (MCScanX)
+# HUMLU_CAS0057742.t1 does appear in an orthogroup (OG0016461)... but does not appear in the single-copy ortholog set
+# so it only ends up being one gene... is it worth fighting for?
+HUMLU_CAS0057742.t1	RVT // RNase H	// PF01693.17      Caulimovirus viroplasmin
+HUMLU_CAS0042868.t1	RNase H	// PF01693.17      Caulimovirus viroplasmin
+OG0016461		HUMLU_CAS0057742.t1	XP_024020633.1	PON36529.1		POO04179.1
+# 11/18/2021
+# PF01693 // PF01693.17 // Caulimovirus viroplasmin: added to list of repeat-associated domains
+'''
+
+
+# 07/30/2021
+# PF03372 // PF03372.24 // Endonuclease/Exonuclease/phosphatase family: https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.0020144#s5 "A High-Resolution Map of Arabidopsis Recombinant Inbred Lines by Whole-Genome Exon Array Hybridization"; Supplementary Table 3, categorized as "Transposons & pseudogenes"
+# PF15136 // PF15136.7 // Uncharacterised protein family UPF0449 // only appears once, in HUMLU_CAS0006722.t1; blastp nr shows similarity to transposon proteins
+
+# 05/06/2021
+# Additional note about Myb-like DNA-binding domain -- not repeat-associated -- (PF12776.8 {HUMLU_CAS0047105.t1; HUMLU_CAS0007464.t1}; PF13837.7 {HUMLU_CAS0066214.t1}; PF00249.32 {HUMLU_CAS0004973.t1; HUMLU_CAS0036771.t1}) "The domesticated transposase ALP2 mediates formation of a novel Polycomb protein complex by direct interaction with MSI1, a core subunit of Polycomb Repressive Complex 2 (PRC2)"
+PF18340 // PF18340.2 // DNA relaxase TraI 2B/2B-like domain // occurs once, with similarity to CACTA; HUMLU_CAS0041770.t1
+PF09634 // PF09634.11 // Protein of unknown function (DUF2025) occurs once, and co-occurs with "Reverse transcriptase"; HUMLU_CAS0048739.t1
+PF08830 // PF08830.11 // Protein of unknown function (DUF1806) // occurs once, and co-occurs with "Reverse transcriptase"; HUMLU_CAS0045168.t1
+PF13799 // PF13799.7  Domain of unknown function (DUF4183); only example co-occurs with "Transposase-associated domain" (PF13963.7) in HUMLU_CAS0037920.t1 and has similarity to CACTA on NCBI
+
+
+# 04/28/2021
+# Added to list of repeat/bacteria/virus-associated domains -->
+HUMLU_CAS0016734.t1     PF12259.9       Baculovirus F protein
+HUMLU_CAS0061121.t1     PF10536.10      Plant mobile domain
+HUMLU_CAS0004326.t1     PF10549.10      ORF11CD3 domain
+HUMLU_CAS0005144.t1     PF04513.13      Baculovirus polyhedron envelope protein, PEP, C terminus
+HUMLU_CAS0005263.t1     PF05975.13      Bacterial ABC transporter protein EcsB
+HUMLU_CAS0009919.t1     PF06092.13      Enterobacterial putative membrane protein (DUF943)
+HUMLU_CAS0007898.t2     PF05840.14      Bacteriophage replication gene A protein (GPA)
+HUMLU_CAS0013718.t1     PF04736.13      Eclosion hormone
+HUMLU_CAS0057181.t1	PF05377.12	Flagella accessory protein C (FlaC)
+HUMLU_CAS0005705.t1     PF09657.11      CRISPR-associated protein Csx8 (Cas_Csx8)
+
+
+# 04/14/2021 update
+# Identified three zinc finger-associated domains that co-occur with domains that have strong association to repeat domains -->
+# These domains are not included on the repeat-associated domain list, but they are used to filter genes that have co-occuring repeat domains (downstream scripts)
+PF04434.18 // SWIM zinc finger --> https://pubmed.ncbi.nlm.nih.gov/12151216/ "In addition, this putative Zn-binding domain was detected in many uncharacterized short proteins (from both prokaryotes and eukaryotes) that contain no other identifiable domains." // https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3435246/ "A Gene Family Derived from Transposable Elements during Early Angiosperm Evolution Has Reproductive Fitness Benefits in Arabidopsis thaliana"; "All MUG genes contain three conserved domains, an N-terminal MuDR DNA-binding domain (Pfam PF03108), a core MULE transposase domain (PF10551), and a C-terminal SWIM zinc-finger domain (PF04434)."
+### 07/30/2021 questionable domain; leave in for now // PF16588 // PF16588.6 // C2H2 zinc-finger --> https://www.nature.com/articles/nbt.3128 (transposon origin); example gene that is repeat-associated: HUMLU_CAS0061758.t1
+PF02892.16 // BED zinc finger --> https://pfam.xfam.org/family/PF02892.16
+
+# other repeat-associated domains identified below
+PF10860 // Protein of unknown function (DUF2661) --> https://pfam.xfam.org/family/PF10860.9 "This viral family of proteins have no known function." (occurs in only one transcript: HUMLU_CAS0033007.t1)
+PF17921 // Integrase zinc binding domain --> https://pfam.xfam.org/family/PF17921.2
+PF18697 // Murine leukemia virus (MLV) integrase (IN) C-terminal domain --> https://pfam.xfam.org/family/PF18697
+PF17055 // PF17055.6 // Viral matrix protein M2	--> http://pfam.xfam.org/family/PF17055
+PF09337 // H2C2 zinc finger (viral homology) --> http://pfam.xfam.org/family/PF09337.11; https://pubmed.ncbi.nlm.nih.gov/16415340/; (HUMLU_CAS0066513.t1, HUMLU_CAS0049625.t1, HUMLU_CAS0049599.t1, HUMLU_CAS0066770.t1)
+PF05878.12 // Phytoreovirus nonstructural protein Pns9/Pns10 --> http://pfam.xfam.org/family/PF05878.12
+PF13358.7 // DDE superfamily endonuclease --> http://pfam.xfam.org/family/PF13358.7
+PF05414 // Viral domain of unknown function (DUF1717) --> http://pfam.xfam.org/family/PF05414 (only significant example occurs in transcript with other repeat-associated domain: HUMLU_CAS0017603.t1)
+PF17241.3 // Ty5 Gag N-terminal region --> http://pfam.xfam.org/family/PF17241.3
+PF01443.19 // Viral (Superfamily 1) RNA helicase --> http://pfam.xfam.org/family/PF01443.19
+PF06096 // Baculoviridae 8.2 KDa protein --> http://pfam.xfam.org/family/PF06096 "Family of proteins from various Baculoviruses with undetermined function."
+PF02160 // PF02160.16 // Cauliflower mosaic virus peptidase (A3) --> http://pfam.xfam.org/family/PF02160
+PF16506 // PF16506.6 // Putative virion glycoprotein of insect viruses --> http://pfam.xfam.org/family/PF16506
+PF13613 // PF13613.7 // Helix-turn-helix of DDE superfamily endonuclease --> https://pfam.xfam.org/family/PF13613
+### Removed from repeat list: PF01348 // PF01348.22 // Type II intron maturase --> https://pfam.xfam.org/family/PF01348.22; https://pfam.xfam.org/family/GIIM; https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5694389/; https://www.frontiersin.org/articles/10.3389/fpls.2014.00035/full "Group II introns are large catalytic RNAs (ribozymes) which are found in bacteria and organellar genomes of several lower eukaryotes, but are particularly prevalent within the mitochondrial genomes (mtDNA) in plants, where they reside in numerous critical genes."
+PF04195 // PF04195.13 // Putative gypsy type transposon --> http://pfam.xfam.org/family/PF04195.13
+PF05528 // PF05528.12 // Coronavirus gene 5 protein --> http://pfam.xfam.org/family/PF05528
+### Removed from repeat list: PF05621 // PF05621.12 // Bacterial TniB protein --> https://pfam.xfam.org/family/PF05621.12
+### Removed from repeat list: PF06103 // PF06103.12 // Bacterial protein of unknown function (DUF948)
+PF00680 // PF00680.21 // Viral RNA-dependent RNA polymerase --> http://pfam.xfam.org/family/PF00680.21
+PF03434 // PF03434.14 // DUF276 (looks bacterial) --> http://pfam.xfam.org/family/PF03434.14 "http://pfam.xfam.org/family/PF03434.14" (one example only: HUMLU_CAS0030463.t1)
+PF18175 // PF18175.2 // CCDC81-like prokaryotic HU domain 2 (looks bacterial) --> http://pfam.xfam.org/family/PF18175.2 (only appears one time, with similarity to HUMLU_CAS0058360.t1; co-occurs with "PF03732.18 Retrotransposon gag protein")
+PF05105 // PF05105.13 // Bacteriophage holin family --> http://pfam.xfam.org/family/PF05105.13; https://en.wikipedia.org/wiki/Holin "Viruses that infect eukaryotic cells may use similar channel-forming proteins called viroporins."
+PF07953 // PF07953.13 Clostridium neurotoxin, N-terminal receptor binding --> https://pfam.xfam.org/family/PF07953.13 (only occurs in one example: HUMLU_CAS0026423.t1)
+### Removed from repeat list: PF00910 // PF00910.23 // RNA helicase --> http://pfam.xfam.org/family/PF00910.23 "The entry represents the core alpha/beta fold of the SF3 helicase domain found predominantly in DNA viruses."
+PF01104 // PF01104.18 // Bunyavirus non-structural protein NS-s
+PF02438 // PF02438.17 // Late 100kD protein --> http://pfam.xfam.org/family/PF02438.17
+PF14214 // PF14214.7 // Helitron helicase-like domain at N-terminus --> http://pfam.xfam.org/family/PF14214.7
+### Removed from repeat list: PF11373 // PF11373.9 // Protein of unknown function (DUF3175) --> http://pfam.xfam.org/family/PF11373.9 "This family of proteins with unknown function appears to be restricted to Proteobacteria." Occurs only in one transcript but nr similarity doesn't show repeat association: HUMLU_CAS0003099.t1
+PF06053 // PF06053.12 // Domain of unknown function (DUF929) --> only significant example in hop gene co-occurs with repeat (HUMLU_CAS0002117.t1)
+### Removed from repeat list: PF19220 // PF19220.1 // Crescentin protein --> http://www.ebi.ac.uk/interpro/entry/InterPro/IPR043652/ "This entry represents the coiled-coil region of crescentin found in alphaproteobacteria."
+### Removed from repeat list: PF02689 // PF02689.15 // Herpes_Helicase --> http://pfam.xfam.org/family/PF02689.15 "This family consists of Helicases from the Herpes viruses."; http://www.ebi.ac.uk/interpro/entry/InterPro/IPR003840/ "This entry consists of DNA helicases from a number of different organisms." 
+### Removed from repeat list (legit hit on ncbi): PF00132 // PF00132.25 // Bacterial transferase hexapeptide (six repeats) --> http://pfam.xfam.org/family/PF00132.25
+### Removed from repeat list (legit hit on ncbi): PF14602 // PF14602.7 // Hexapeptide repeat of succinyl-transferase --> http://pfam.xfam.org/family/PF14602.7 # bacterial
+PF09959 // PF09959.10 // Uncharacterized protein conserved in archaea (DUF2193) --> http://pfam.xfam.org/family/PF09959.10 "found in various hypothetical archaeal proteins" (only appears in transcript HUMLU_CAS0017664.t1 along with PF13963.7, "Transposase-associated domain")
+PF13670 // PF13670.7 // Peptidase propeptide and YPEB domain --> only appears once in HUMLU_CAS0063765.t1; shows repeat similarity via blastp nr
+
+PF09668.11 // Aspartyl protease --> http://pfam.xfam.org/family/PF09668.11
+PF13961.7 // Domain of unknown function (DUF4219) --> http://pfam.xfam.org/family/PF13961.7 "This domain is very short and is found at the N-terminal of many Gag-pol polyprotein and related proteins." This domain frequently occurs with other repeat domains, but by itself shows similarity to gag-pol polyprotein, e.g. HUMLU_CAS0050385.t1; HUMLU_CAS0051079.t1
+PF06918.15 // Protein of unknown function (DUF1280) --> https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3985635/ "DUF1280 (PF06918) corresponds to putative transposases of Chapaev transposons present in animals"; https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3093488/
+PF05585.13 // Putative peptidase (DUF1758) --> http://pfam.xfam.org/family/PF05585.13 (occurs in transcript with other repeat domains: HUMLU_CAS0055663.t1)
+PF06869.13 // Protein of unknown function (DUF1258) --> https://pfam.xfam.org/family/PF06869.13 "This family corresponds to the Mirage group of putative transposases and family members are relatively close homologs of Transposase_21"; https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3985635/
+### Added back to repeat list 04/29/2021 ### Removed from primary repeat list/added to conditional repeat list: PF14291.7 // Domain of unknown function (DUF4371) --> https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3985635/ "Transposase families that have been identified previously, but not assigned explicitly to the RNase H clan, include DUF1258 (PF06869), Transposase_21 (PF02992), DUF1280 (PF06918), Tnp_P_element family (PF12017), DUF659 (PF04937) and DUF4371 (PF14291)." Some examples where it occurs by itself and has similarity to "zinc finger MYM-type protein 1-like" (e.g. HUMLU_CAS0051023.t1, HUMLU_CAS0041690.t1, HUMLU_CAS0011021.t1)
+
+### PF14372 // Revisited on 07/30/2021... this is a questionable case... real gene with transposon assocation; on blastp shows up as RICESLEEPER, using HUMLU_CAS0038120.t1 as an example // Marchal C, Haberer G, Spannagl M, Uauy C. Comparative Genomics and Functional Studies of Wheat BED-NLR Loci. Genes. 2020 Dec;11(12):1406. "We identified three domains that were significantly overrepresented in BED-NLR clusters (p-value < 5 × 10−2); hAT family C-terminal dimerization region (hAT, PF05699), Domain of unknown function (DUF) 4413 found in transposase-like proteins (DUF4413, PF14372) and single-BED proteins (Table 4)." // https://pfam.xfam.org/family/PF14372 "This domain is part of an RNase-H fold section of longer proteins some of which are transposable elements possibly of the Pong type, since some members are putative Tam3 transposases." ### Removed from primary repeat list/added to conditional repeat list: PF14372.7 // Domain of unknown function (DUF4413) --> https://pfam.xfam.org/family/PF14372.7 (this domain often occurs by itself and has similarity on blastp nr to "zinc finger BED domain-containing protein RICESLEEPER 4-like [Cannabis sativa]" e.g. HUMLU_CAS0054036.t1, HUMLU_CAS0044489.t1, HUMLU_CAS0025153.t1; this domain also occurs with other repeat domains, e.g. HUMLU_CAS0025411.t1, HUMLU_CAS0025604.t1, HUMLU_CAS0025037.t1, HUMLU_CAS0025080.t1, HUMLU_CAS0025318.t1; categorized as conditional because of co-occuring domains in HUMLU_CAS0025411.t1)
+PF05699.15 // hAT family C-terminal dimerisation region --> https://pfam.xfam.org/family/PF05699.15 "This domain is highly conserved in transposase enzymes." 
+### Added back to repeat list 04/29/2021 (OrthoFinder result showed cluster of these genes) ### Removed from primary repeat list/added to conditional repeat list: PF13952.7 // Domain of unknown function (DUF4216) --> https://pfam.xfam.org/family/PF13952.7 "This DUF is sometimes found at the C-terminal end of proteins carrying a Transposase_21 domain"; another DUF that frequently occurs by itself and can't clearly be called repeat-associated (e.g. HUMLU_CAS0046319.t1, HUMLU_CAS0046312.t1, HUMLU_CAS0043760.t1; does co-occur with repeat, e.g. HUMLU_CAS0046358.t1)
+### Added back to repeat list 04/29/2021 ### Removed from primary repeat list/added to conditional repeat list: PF04937 // PF04937.16 // Protein of unknown function (DUF 659) --> https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3985635/ "DUF659 (PF04937) and DUF4371 (PF14291) include transposases of hAT transposons." (occurs by itself: HUMLU_CAS0006586.t1, HUMLU_CAS0007618.t1, HUMLU_CAS0009828.t1, HUMLU_CAS0003849.t1; occurs with other repeat domain: HUMLU_CAS0016894.t1, HUMLU_CAS0045125.t1, HUMLU_CAS0006890.t1)
+
+PF05585 // DUF1758 # associated with retroviral proteins --> http://pfam.xfam.org/family/gag-asp_proteas
+### Added back to primary repeat list 07/31/2021 // PF13696 # appears along with other well-established repeat domains including PF08284, PF14223, PF03732, PF13975 // https://supfam.mrc-lmb.cam.ac.uk/SUPERFAMILY/cgi-bin/dcpfam.cgi?acc=CL0511 "clan: Retrovirus zinc finger-like domains" along with Zinc knuckle [PF15288], Zinc knuckle [PF00098], Zinc knuckle [PF14392], Eukaryotic translation initiation factor 3 subunit G [PF12353], CLIP1 zinc knuckle [PF16641]; Fang H, Gough J. DcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more. Nucleic acids research. 2013 Jan 1;41(D1):D536-44.
+### Added back to primary repeat list 07/30/2021 ### Removed from primary repeat list/added to conditional repeat list: PF00098 // PF00098.24 // appears along with other well-established repeat domains including PF13975, PF08284, PF03732 --> http://pfam.xfam.org/family/zf-CCHC "The motifs are mostly from retroviral gag proteins (nucleocapsid). Prototype structure is from HIV. Also contains members involved in eukaryotic gene regulation, such as C. elegans GLH-1."
+### Added back to repeat list 04/29/2021 (OrthoFinder result showed cluster of these genes) ### Removed from primary repeat list/added to conditional repeat list: PF13960 // DUF4218 # appears along with other well-established repeat domains including PF14223, PF13963, PF03004, PF02992; https://pfam.xfam.org/family/PF13960.7 includes link to "Transposase_21" (this domain occurs by itself, e.g. HUMLU_CAS0066369.t1, HUMLU_CAS0066238.t1, HUMLU_CAS0066375.t1, HUMLU_CAS0066428.t1 and also co-occurs with repeat domains, e.g. HUMLU_CAS0066402.t1, HUMLU_CAS0066421.t1, HUMLU_CAS0066502.t1)
+### Added back to primary repeat list 07/30/2021 ### Removed from repeat list: PF14392 # appears along with other well-established repeat domains including PF03732, PF13975
+### Removed from primary repeat list/added to conditional repeat list: PF13917 // PF13917.7 # http://pfam.xfam.org/family/PF13917/alignment/rp35 //// http://pfam.xfam.org/family/PF13917
+### Removed from primary repeat list: PF13837 // PF13837.7 # https://pfam.xfam.org/family/Myb_DNA-bind_4 (This domain is not clearly repeat associated. Quite a few examples of transcripts containing only this domain or the similar domain PF12776 that are not repeat associated, e.g. HUMLU_CAS0050096.t1, HUMLU_CAS0067288.t1, HUMLU_CAS0055585.t1, HUMLU_CAS0026281.t1, HUMLU_CAS0024206.t1, HUMLU_CAS0062637.t1)
+### Removed from primary repeat list: PF12776 // PF12776.8 # https://pfam.xfam.org/family/Myb_DNA-bind_3; http://pfam.xfam.org/family/PF12776.8 (This domain is not clearly repeat associated. Quite a few examples of transcripts containing only this domain or the similar domain PF13837 that are not repeat associated, e.g. HUMLU_CAS0046340.t1, HUMLU_CAS0046377.t1, HUMLU_CAS0046421.t1. Transcript with this domain and other repeat domain also does not have clear repeat association via blastp nr, e.g. HUMLU_CAS0047105.t1)
+PF00078 # http://pfam.xfam.org/family/pf00078
+PF12784 # https://www.ncbi.nlm.nih.gov/Structure/cdd/PF12784
+PF13359 # "DDE Transposases: Structural Similarity and Diversity" https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2991504/
+PF12784 # https://www.ncbi.nlm.nih.gov/Structure/cdd/PF12784
+### Added back to primary repeat list 07/30/2021 ### Removed from primary repeat list/added to conditional repeat list: PF14111 // DUF4283 # "LINEs between Species: Evolutionary Dynamics of LINE-1 Retrotransposons across the Eukaryotic Tree of Life" https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5203782/ (this domain sometimes occurs by itself, e.g. HUMLU_CAS0066255.t1, HUMLU_CAS0066354.t1, HUMLU_CAS0046369.t1, HUMLU_CAS0066615.t1, and sometimes co-occurs with repeat domains, e.g. HUMLU_CAS0046263.t1, HUMLU_CAS0046338.t1, HUMLU_CAS0049810.t1, HUMLU_CAS0043927.t1, HUMLU_CAS0044001.t1)
+PF06485 // DUF1092 # identified as having "involvement in the transposition/integration activity" --> "The RNase H-like superfamily: new members, comparative structural analysis and evolutionary classification" https://academic.oup.com/nar/article/42/7/4160/2435711
+
+### Excluded family IDs: ###
+PF11474
+PF06550
+PF00026 # https://pfam.xfam.org/family/PF00026 "This family does not include the retroviral nor retrotransposon proteases"
+PF17984
+PF16828
+PF16770
